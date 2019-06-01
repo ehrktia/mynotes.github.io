@@ -8,6 +8,7 @@ TOC
 
   * [docker-gist](#docker-gist)
   * [vim-cheat-sheet](#vim-cheat-sheet)
+  * [misc](#misc)
 
  Docker-Gist
  ----
@@ -17,6 +18,9 @@ TOC
  -------
 [vim cheat sheet][vimcheatsheet]
 
+misc
+-----
+- In github markdown to add anchor to any heading use only lower case in the heading name (only in ToC section) and the link should be seperated using hypen.
 
 
 
