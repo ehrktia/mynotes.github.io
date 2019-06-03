@@ -32,6 +32,8 @@ QuickGuide
 # Ergo-Layout
 
 [Ergolayout][ergodoxlayout]
+[ErgolayoutUpd][ergodoxlayoutupd]
+
 
 # misc
 
@@ -42,4 +44,5 @@ QuickGuide
 [vimcheatsheet]:https://vim.rtorr.com
 [tmuxcheatsheet]:https://tmuxcheatsheet.com
 [ergodoxlayout]:https://configure.ergodox-ez.com/ergodox-ez/layouts/9DYOO/latest/2
+[ergodoxlayoutupd]:https://configure.ergodox-ez.com/ergodox-ez/layouts/EewRQ/latest/2
 [golangdockernotes]:https://blog.docker.com/2016/09/docker-golang/
