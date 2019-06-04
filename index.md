@@ -1,6 +1,5 @@
 # Welcome to Ehrktia Notes
 
-
 # General
 This repo to host the general notes and good to know facts.Mostly unordered in nature containing details related to projects which are work in progress.
 
@@ -36,7 +35,6 @@ QuickGuide
 
 [Ergolayout][ergodoxlayout]
 
-[ErgolayoutUpd][ergodoxlayoutupd]
 
 
 # misc
@@ -47,8 +45,8 @@ QuickGuide
 [mygitgistdockerfile]:https://gist.github.com/ehrktia/08527e17aff1d08df47fbb6305cba74a
 [vimcheatsheet]:https://vim.rtorr.com
 [tmuxcheatsheet]:https://tmuxcheatsheet.com
-[ergodoxlayout]:https://configure.ergodox-ez.com/ergodox-ez/layouts/9DYOO/latest/2
-[ergodoxlayoutupd]:https://configure.ergodox-ez.com/ergodox-ez/layouts/EewRQ/latest/2
+[ergodoxlayout]:https://configure.ergodox-ez.com/ergodox-ez/layouts/B4ZZd/latest/1
+
 [golangdockernotes]:https://blog.docker.com/2016/09/docker-golang/
 [golangofficialdockerimage]:https://hub.docker.com/_/golang/
 
