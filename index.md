@@ -13,7 +13,7 @@ QuickGuide
   * [ergodox-layout](#ergo-layout)
   * [misc](#misc)
 
-# Docker-Gist
+## Docker-Gist
  
 [Docker Skeleton-Gist][mygitgistdockerfile]
 
@@ -23,21 +23,21 @@ QuickGuide
 
 [Golang-official-Docker-img][golangofficialdockerimage]
 
-# Vim-Cheat-Sheet
+## Vim-Cheat-Sheet
  
 [vim cheat sheet][vimcheatsheet]
 
-# Tmux-Cheat-Sheet
+## Tmux-Cheat-Sheet
 
 [tmux cheat sheet][tmuxcheatsheet]
 
-# Ergo-Layout
+## Ergo-Layout
 
 [Ergolayout][ergodoxlayout]
 
 
 
-# misc
+### misc
 
 - In github markdown to add anchor to any heading use only lower case in the heading name (only in ToC section) and the link should be seperated using hypen.
 
