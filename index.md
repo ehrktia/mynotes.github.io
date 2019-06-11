@@ -26,6 +26,7 @@ QuickGuide
 ## Vim-Cheat-Sheet
  
 [vim cheat sheet][vimcheatsheet]
+[vim_tricks_1][vimtricks1]
 
 ## Tmux-Cheat-Sheet
 
@@ -41,7 +42,7 @@ QuickGuide
 
 - In github markdown to add anchor to any heading use only lower case in the heading name (only in ToC section) and the link should be seperated using hypen.
 
-
+[vimtricks1]:https://www.hillelwayne.com/post/intermediate-vim/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav
 [mygitgistdockerfile]:https://gist.github.com/ehrktia/08527e17aff1d08df47fbb6305cba74a
 [vimcheatsheet]:https://vim.rtorr.com
 [tmuxcheatsheet]:https://tmuxcheatsheet.com
