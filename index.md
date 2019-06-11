@@ -26,6 +26,7 @@ QuickGuide
 ## Vim-Cheat-Sheet
  
 [vim cheat sheet][vimcheatsheet]
+
 [vim_tricks_1][vimtricks1]
 
 ## Tmux-Cheat-Sheet
