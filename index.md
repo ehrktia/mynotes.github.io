@@ -48,7 +48,39 @@ QuickGuide
 
 - In github markdown to add anchor to any heading use only lower case in the heading name (only in ToC section) and the link should be seperated using hypen.
 
-```set listchars=nbsp:¬,tab:»·,trail:·```
+- Vimrc config obtained from https://github.com/joelhooks
+
+```
+"visual display of tabs and trailing space/characters
+set listchars=nbsp:¬,tab:»·,trail:·
+"savefile automatically
+set autowrite
+" For regular expressions turn magic on
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+" Remember info about open buffers on close
+set viminfo^=%
+
+" Remap VIM 0 to first non-blank character
+map 0 ^
+" Breaking lines with \[enter] without having to go to insert mode (myself).
+nmap <leader><cr> i<cr><Esc>
+" Reload changes to .vimrc automatically
+autocmd BufWritePost  ~/.vimrc source ~/.vimrc
+" map ctrl p to open control p plugin
+let g:ctrlp_map = '<c-p>'
+
+
+
+
+```
 
 [vimtricks1]:https://www.hillelwayne.com/post/intermediate-vim/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav
 [mygitgistdockerfile]:https://gist.github.com/ehrktia/08527e17aff1d08df47fbb6305cba74a
