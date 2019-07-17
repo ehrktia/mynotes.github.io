@@ -11,7 +11,7 @@ QuickGuide
   * [tmux-cheat-sheet](#tmux-cheat-sheet)
   * [ergodox-layout](#ergo-layout)
   * [misc](#misc)
-  * [gittips](#gittips)
+  * [git-tips](#git-tips)
   * [coverage-buildstatus-report-tools](#coverage-buildstatus-report-tools)
 
 # Docker-Gist
@@ -56,7 +56,7 @@ QuickGuide
 # Git-tips
  - `git log` to display commit history for repo.
  - `git reset --hard <<commit hash or commit ref>>` to reverse the commits along with history and changes from stage.
- ** NOTE :** Above command works only with unsynced/non pushed stage only changes.Any changes commited to remote(github) repo can not follow this approach.
+ **NOTE:** Above command works only with unsynced/non pushed stage only changes.Any changes commited to remote(github) repo can not follow this approach.
  -  To preserve the changes in the current working folder even after reversing the commits follow below steps.
      - `git stash` - will capture the changes in cwd/pwd 
      - `git reset --hard <<commit hash or commit ref>>`- revert commit history along with changes in pwd.
