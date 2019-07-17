@@ -11,6 +11,7 @@ QuickGuide
   * [tmux-cheat-sheet](#tmux-cheat-sheet)
   * [ergodox-layout](#ergo-layout)
   * [misc](#misc)
+  * [gittips](#gittips)
   * [coverage-buildstatus-report-tools](#coverage-buildstatus-report-tools)
 
 # Docker-Gist
@@ -52,7 +53,20 @@ QuickGuide
 [![Releases](https://img.shields.io/github/release/etcd-io/etcd/all.svg?style=flat-square)](https://github.com/etcd-io/etcd/releases)
 [![LICENSE](https://img.shields.io/github/license/etcd-io/etcd.svg?style=flat-square)](https://github.com/etcd-io/etcd/blob/master/LICENSE)
 
-
+# Git-tips
+ - `git log` to display commit history for repo.
+ - `git reset --hard <<commit hash or commit ref>>` to reverse the commits along with history and changes from stage.
+ ** NOTE :** Above command works only with unsynced/non pushed stage only changes.Any changes commited to remote(github) repo can not follow this approach.
+ -  To preserve the changes in the current working folder even after reversing the commits follow below steps.
+     - `git stash` - will capture the changes in cwd/pwd 
+     - `git reset --hard <<commit hash or commit ref>>`- revert commit history along with changes in pwd.
+     - `git stash pop` - re write the changes captured from step 1 to pwd.
+     # Published commit reversal
+       - `git revert <hash-or-ref>`- to revert published commits to remote repo.
+     # Checkout previous commit
+       - `git checkout <hash-or-ref>`- to checkout a published commit.
+     
+     
 [mygitgistdockerfile]:https://gist.github.com/ehrktia/08527e17aff1d08df47fbb6305cba74a
 [vimcheatsheet]:https://vim.rtorr.com
 [tmuxcheatsheet]:https://tmuxcheatsheet.com
