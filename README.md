@@ -8,6 +8,7 @@ QuickGuide
   * [docker-gist](#docker-gist)
     * [golang-docker](#golang-docker)
   * [vim-cheat-sheet](#vim-cheat-sheet)
+     * [vim-register-tips](#vim-register-tips)
   * [tmux-cheat-sheet](#tmux-cheat-sheet)
   * [ergodox-layout](#ergo-layout)
   * [misc](#misc)
@@ -26,7 +27,18 @@ QuickGuide
 
 # Vim-Cheat-Sheet
  
-[vim cheat sheet][vimcheatsheet]
+[vim cheat sheet][vimcheatsheet] 
+
+## Vim-Register-tips
+
+- Registers - They are used similar to clipboard instead of single version provided by system vim's memory buffer can be utilized as multiple clipboards.
+
+- `:reg` command is used to display all the data held globally in all registers.
+- `"<register name ex:a-z or 0-9>` command is used to display data held in provided register only.
+- `"ay` command is used to copy the content yanked in to register a.
+-  __NOTE:__ _use lower case register to replace contents already present in registers, upper case alphabets will append the data to registers_.
+
+  further more details on default registers can be obtained via [vimregister][vimtipregister]
 
 # Tmux-Cheat-Sheet
 
@@ -74,3 +86,4 @@ QuickGuide
 [ergodoxlayoutupd]:https://configure.ergodox-ez.com/ergodox-ez/layouts/EewRQ/latest/2
 [golangdockernotes]:https://blog.docker.com/2016/09/docker-golang/
 [golangofficialdockerimage]:https://hub.docker.com/_/golang/
+[vimtipregister]:https://www.brianstorti.com/vim-registers/
