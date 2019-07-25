@@ -38,8 +38,30 @@ QuickGuide
 - `"ay` command is used to copy the content yanked in to register a.
 -  __NOTE:__ _use lower case register to replace contents already present in registers, upper case alphabets will append the data to registers_.
 
-  further more details on default registers can be obtained via [vimregister][vimtipregister]
+  further more details on default registers can be obtained via [vimregister][vimtipregister]<br>
+   **More Tips**
+   
+   Hit Ctrl-R then `".` If you have literal control characters in what you have yanked, use Ctrl-R, Ctrl-O `".`<br>
+	•  0 (yank register: when you use y in normal mode, without specifying a register, yanked text goes there and also to the default register)<br>
+	•  1 to 9 (shifting delete registers, when you use commands such as c or d, what has been deleted goes to register 1, what was in register 1 goes    register 2, etc.)<br>
+	•    `"` (default register, also known as unnamed register. This is where the `"` comes in Ctrl-R, `"`)<br>
+	•    a to z for your own use (capitalized A to Z are for appending to corresponding registers).<br>
+	•    `_` (acts like /dev/null (Unix) or NUL (Windows), you can write to it but it's discarded and when you read from it, it is always empty)<br>
+	•    `-` (small delete register)<br>
+	•    `/` (search pattern register, updated when you look for text with `/, ?, * or #` for instance; you can also write to it to dynamically change the search pattern)<br>
+	•   `:` (stores last VimL typed command via Q or `:,` readonly)<br>
+	•   `+ and *` (system clipboard registers you can write to them to set the clipboard and read the clipboard contents from them)<br>
+	•  In normal mode, hit `":p`. The last command you used in vim is pasted into your buffer.<br>
+ 
+ Let's decompose: `"` is a Normal mode command that lets you select what register is to be used during the next yank, delete or paste operation. So `":` selects the colon register (storing last command). Then p is a command you already know, it pastes the contents of the register.<br>
+ command - `yj:@"Enter`<br>
+*  `:@` Ex command plays Ex commands stored in the register given as argument, and `"` is how you refer to the unnamed register. <br>
+•  If you have recorded a macro with `qa...q` then `:echo @a` will tell you what you have typed, and `@a` will replay the macro (probably you knew that one, very useful in order to avoid repetitive tasks)<br>
 
+
+Further reading on same from Stack overflow is on -[vim_reg_moretips][vim_reg_moretips]
+
+   
 # Tmux-Cheat-Sheet
 
 [tmux cheat sheet][tmuxcheatsheet]
@@ -87,3 +109,4 @@ QuickGuide
 [golangdockernotes]:https://blog.docker.com/2016/09/docker-golang/
 [golangofficialdockerimage]:https://hub.docker.com/_/golang/
 [vimtipregister]:https://www.brianstorti.com/vim-registers/
+[vim_reg_moretips]:https://stackoverflow.com/questions/3997078/how-to-paste-yanked-text-into-vim-command-line/3997110#3997110
